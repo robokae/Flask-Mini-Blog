@@ -1,4 +1,4 @@
-# Flask-Mini-Blog
+# Flask-Todo
 Source code and material for the ACM SWE Flask Workshop. 
 
 ## Getting Started
