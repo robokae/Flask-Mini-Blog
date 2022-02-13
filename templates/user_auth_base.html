@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/user-auth.css') }}">
+{% endblock %}
+
+{% block page_content %}
+<div class="user-auth-container">
+    <div class="content">
+        <h1 class="heading">
+            {% block heading %}{% endblock %}
+        </h1>
+        <form class="user-auth-form">
+            {{ form.hidden_tag() }}
+            {% block user_auth_form_content %}{% endblock %}
+        </form>
+        {% block user_auth_option %}{% endblock %}
+    </div>
+</div>
+{% endblock %}

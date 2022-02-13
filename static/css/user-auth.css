@@ -1,0 +1,42 @@
+.user-auth-container {
+    height: max-content;
+    width: 100%;
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    min-width: 300px;
+    width: max-content;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-col);
+    border-radius: 8px;
+}
+
+.user-auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.user-auth-input,
+.user-auth-submit {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+}
+
+.user-auth-input {
+}
+
+.user-auth-submit {
+    margin-top: 32px;
+    background-color: var(--button-col);
+    color: var(--primary-text-col);
+    cursor: pointer;
+}
