@@ -7,11 +7,11 @@
 
 {% block page_content %}
 <div class="user-auth-container">
-    <div class="content">
-        <h1 class="heading">
+    <div class="user-auth-container__content">
+        <h1 class="user-auth-container__heading">
             {% block heading %}{% endblock %}
         </h1>
-        <form class="user-auth-form">
+        <form class="user-auth-container__form">
             {{ form.hidden_tag() }}
             {% block user_auth_form_content %}{% endblock %}
         </form>

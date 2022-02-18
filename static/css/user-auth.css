@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.content {
+.user-auth-container__content {
     min-width: 300px;
     width: max-content;
     padding: 32px;
@@ -16,14 +16,14 @@
     border-radius: 8px;
 }
 
-.user-auth-form {
+.user-auth-container__form {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.user-auth-input,
-.user-auth-submit {
+.user-auth-container__input,
+.user-auth-container__submit-button {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding: 8px;
@@ -31,10 +31,7 @@
     border-radius: 6px;
 }
 
-.user-auth-input {
-}
-
-.user-auth-submit {
+.user-auth-container__submit-button {
     margin-top: 32px;
     background-color: var(--button-col);
     color: var(--primary-text-col);
