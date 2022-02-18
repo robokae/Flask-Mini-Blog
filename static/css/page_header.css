@@ -15,6 +15,13 @@
     align-items: center;
 }
 
+.page-header__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-text-col);
+    text-decoration: none;
+}
+
 .page-header__nav-links {
     display: flex;
     flex-direction: row;

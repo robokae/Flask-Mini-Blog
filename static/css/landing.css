@@ -1,0 +1,31 @@
+.landing {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing__heading {
+    font-size: 3rem;
+}
+
+.landing__call-to-action-button {
+    padding: 1rem 0;
+    background-color: var(--button-col);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.landing__link {
+    padding: 1rem 2rem;
+    color: var(--primary-text-col);
+    text-decoration: none;
+}
