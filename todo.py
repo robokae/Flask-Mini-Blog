@@ -2,13 +2,14 @@ import os
 from flask import Flask, render_template, url_for, request, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_required
-from werkzeug.security import generate_password_hash, check_password_hash
+from flask_bcrypt import Bcrypt
 
 from forms import LoginForm, RegisterForm
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
+bcrypt = Bcrypt(app)
 
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
