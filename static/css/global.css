@@ -1,9 +1,26 @@
 body {
-    height: 100%;
-    width: 100%;
+    height: max-content;
+    width: 100vw; 
+    max-width: 1280px;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: var(--primary-bg-col);
     color: var(--primary-text-col);
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }
 
+.page-content {
+    width: 80%;
+}
+
+@media screen and (min-width: 1280px) {
+    .page-content {
+        width: 100%;
+    }
+}

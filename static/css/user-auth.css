@@ -1,4 +1,4 @@
-.user-auth-container {
+.user-auth {
     height: max-content;
     width: 100%;
     padding-top: 64px;
@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.user-auth-container__content {
+.user-auth__content {
     min-width: 300px;
     width: max-content;
     padding: 32px;
@@ -16,14 +16,14 @@
     border-radius: 8px;
 }
 
-.user-auth-container__form {
+.user-auth__form {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.user-auth-container__input,
-.user-auth-container__submit-button {
+.user-auth__input,
+.user-auth__submit-button {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding: 8px;
@@ -31,7 +31,7 @@
     border-radius: 6px;
 }
 
-.user-auth-container__submit-button {
+.user-auth__submit-button {
     margin-top: 32px;
     background-color: var(--button-col);
     color: var(--primary-text-col);

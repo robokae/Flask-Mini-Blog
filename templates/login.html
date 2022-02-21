@@ -5,9 +5,9 @@
 {% block heading %}Sign in{% endblock %}
 
 {% block user_auth_form_content %}
-{{ form.username.label() }} {{ form.username(class='user-auth-container__input') }}
-{{ form.password.label() }} {{ form.password(class='user-auth-container__input') }}
-{{ form.submit(class='user-auth-container__submit-button') }}
+{{ form.username.label() }} {{ form.username(class='user-auth__input') }}
+{{ form.password.label() }} {{ form.password(class='user-auth__input') }}
+{{ form.submit(class='user-auth__submit-button') }}
 {% endblock %}
 
 {% block user_auth_option %}

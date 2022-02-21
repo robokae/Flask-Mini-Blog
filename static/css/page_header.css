@@ -1,5 +1,5 @@
 .page-header {
-    width: 100%;
+    width: 80%;
     height: var(--page-header-height);
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@
 }
 
 .page-header__content {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,4 +31,10 @@
 .page-header__nav-link {
     color: var(--primary-text-col);
     text-decoration: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .page-header {
+        width: 100%;
+    }
 }
