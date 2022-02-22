@@ -3,8 +3,8 @@
 
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" src="{{ url_for('static', filename='css/home.css') }}"/>
-    <link rel="stylesheet" src="{{ url_for('static', filename='css/todo.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/todo.css') }}"/>
 {% endblock %}
 
 {% block title %}Home{% endblock %}
@@ -14,17 +14,17 @@
         <div class="todos__content">
             <div class="todos__content-left">
                 <ul class="todos__side-menu">
-                    <li class="todos__side-menu-item">
+                    <li class="todos__side-menu-item todos__side-menu-item--active">
                         <p class="todos__side-menu-text">Today</p>
-                        <p class="todos__side-menu-text">5</p>
+                        <p class="todos__side-menu-text todos__side-menu-text--secondary">5</p>
                     </li>
                     <li class="todos__side-menu-item">
                         <p class="todos__side-menu-text">Upcoming</p>
-                        <p class="todos__side-menu-text">3</p> 
+                        <p class="todos__side-menu-text todos__side-menu-text--secondary">3</p> 
                     </li>
                     <li class="todos__side-menu-item">
                         <p class="todos__side-menu-text">Important</p>
-                        <p class="todos__side-menu-text">5</p> 
+                        <p class="todos__side-menu-text todos__side-menu-text--secondary">5</p> 
                     </li>
                 </ul>
             </div> 
@@ -34,7 +34,7 @@
                     <input class="todos__search-bar" placeholder="Search" />
                     <div class="todos__dropdown">
                         <label class="todos__dropdown-label" for="sort-by">Sort by:</label>
-                        <select name="sort-by" id="sort-by">
+                        <select name="todos__dropdown-selector" id="sort-by">
                             <option value="recent">Recent</option>
                             <option value="alphabetical">A-Z</option>
                         </select>
@@ -45,7 +45,7 @@
                         {{ todo() }}
                     {% endfor %}
                 </div>
-                <form method="post">
+                <form class="todos__add-todo-form" method="post">
                     <input class="todos__add-todo-input" placeholder="Add a todo" />
                     <button class="todos__add-todo-button">Add</button>
                 </form>

@@ -1,9 +1,12 @@
 :root {
     --primary-bg-col: #212529;
+    --secondary-bg-col: #262a2e;
     --primary-text-col: #f8f9fa;
     --secondary-text-col: #ff7b00;
+    --tertiary-text-col: #7b8186;
+    --accent-col: #ff7b00;
     --navbar-bg-col: #293241;
-    --border-col: #2d2f31;
+    --border-col: #333638;
     --button-col: #ff7b00;
 
     --page-header-height: 3rem;
