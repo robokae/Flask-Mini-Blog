@@ -1,0 +1,11 @@
+{% macro page_header() %}
+<header class="page-header">
+    <div class="page-header__content">
+        <a href="{{ url_for('main.landing') }}" class="page-header__logo">Flask Todo</a>
+        <nav class="page-header__nav-links">
+            <a href="{{ url_for('main.login') }}" class="page-header__nav-link">Sign In</a>
+            <a href="{{ url_for('main.register') }}" class="page-header__nav-link">Register</a>
+        </nav>
+    </div>
+</header>
+{% endmacro %}
