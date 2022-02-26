@@ -1,3 +1,15 @@
+.page-header {
+    height: calc(var(--page-header-height) * 2);
+}
+
+.page-header__content {
+    justify-content: center;
+}
+
+.page-header__nav-links {
+    display: none;
+}
+
 .user-auth {
     height: max-content;
     width: 100%;
@@ -7,13 +19,18 @@
 }
 
 .user-auth__content {
-    min-width: 300px;
+    min-width: 350px;
     width: max-content;
     padding: 32px;
     display: flex;
     flex-direction: column;
+    background-color: var(--secondary-bg-col);
     border: 1px solid var(--border-col);
     border-radius: 8px;
+}
+
+.user-auth__heading {
+    text-align: center;
 }
 
 .user-auth__form {
@@ -29,6 +46,16 @@
     padding: 8px;
     border: none;
     border-radius: 6px;
+}
+
+.user-auth__input {
+    background-color: var(--primary-bg-col);
+    color: var(--primary-text-col);
+    border: 1px solid var(--border-col);
+}
+
+.user-auth__input:focus {
+    outline: none;
 }
 
 .user-auth__submit-button {
