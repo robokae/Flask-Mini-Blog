@@ -11,7 +11,7 @@
         <h1 class="user-auth__heading">
             {% block heading %}{% endblock %}
         </h1>
-        <form class="user-auth__form">
+        <form class="user-auth__form" method="post">
             {{ form.hidden_tag() }}
             {% block user_auth_form_content %}{% endblock %}
         </form>
